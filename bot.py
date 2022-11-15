@@ -5,7 +5,7 @@ from telegram.ext import CommandHandler, ConversationHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-TOKEN = '5676712449:AAE8xZGGXCj2waXCsQPq_G5RVpeHbUClSgM'
+TOKEN = '5676712449:AAE8xZGGXCj2waXCsQPq_G5RVpeHbUC####'
 USER_BASE = {}
 ANSWER = ''
 N_EXAMPLE = ''
