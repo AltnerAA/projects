@@ -1,0 +1,26 @@
+CREATE TABLE students ( 
+id INT PRIMARY KEY AUTO_INCREMENT, 
+FIO VARCHAR(255), 
+phone VARCHAR(255), 
+email VARCHAR(255) 
+);
+CREATE TABLE subjects ( 
+id INT PRIMARY KEY AUTO_INCREMENT, 
+name VARCHAR(255), 
+FIO_teacher VARCHAR(255),
+Exam_date DATE
+);
+CREATE TABLE grades ( 
+id INT PRIMARY KEY AUTO_INCREMENT, 
+grade INT);
+CREATE TABLE plans ( 
+id INT PRIMARY KEY AUTO_INCREMENT, 
+materials VARCHAR(255) 
+);
+CREATE TABLE Result ( 
+id INT PRIMARY KEY AUTO_INCREMENT, 
+FOREIGN KEY (student_id) REFERENCES students(id), 
+FOREIGN KEY (subject_id) REFERENCES Subjects(id),
+FOREIGN KEY (grade_id) REFERENCES grades(id), 
+FOREIGN KEY (plan_id) REFERENCES plans(id)
+)
